@@ -21,5 +21,25 @@ public class RegisterAccountMethods extends RegisterAccountObjects {
 		Thread.sleep(1000);
 		driver.findElement(lastName).sendKeys(lastNameValue);
 	}
+	
+	public void populateEmail() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(email).sendKeys(emailValue);
+	}
+	
+	public void populatePassword() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.findElement(password).sendKeys(passwordValue);
+	}
+	
+	public void populateConfirmPassword() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.findElement(confirmPassword).sendKeys(passwordValue);
+	}
+	
+	public void clickRegisterButton() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.findElement(registerButton).click();
+	}
 
 }
