@@ -46,6 +46,7 @@ public class RegisterAccount extends EnvironmentVariables {
 		String returnMessage = printMessage.logRegistrationMessage();
 		System.out.println(returnMessage);
 		Assert.assertEquals(driver.getCurrentUrl(), ACC_URL);
+		driver.close();
 	   
 	}
 
