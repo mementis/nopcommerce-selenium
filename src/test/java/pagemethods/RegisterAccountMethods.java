@@ -41,5 +41,10 @@ public class RegisterAccountMethods extends RegisterAccountObjects {
 		Thread.sleep(2000);
 		driver.findElement(registerButton).click();
 	}
+	
+	public String logRegistrationMessage() throws InterruptedException {
+		Thread.sleep(2000);
+		return driver.findElement(registrationMessage).getText();
+	}
 
 }

@@ -41,8 +41,11 @@ public class RegisterAccount extends EnvironmentVariables {
 	}
 
 	@Then("User gets logged in to user's account")
-	public void user_gets_logged_in_to_user_s_account() {
-	    
+	public void user_gets_logged_in_to_user_s_account() throws InterruptedException {
+		RegisterAccountMethods printMessage = new RegisterAccountMethods(driver);
+		String returnMessage = printMessage.logRegistrationMessage();
+		System.out.println(returnMessage);
+		Assert.assertEquals(driver.getCurrentUrl(), ACC_URL);
 	   
 	}
 
