@@ -8,5 +8,13 @@ public class RegisterAccountObjects {
 	public static String firstNameValue = "Mara";
 	public static By lastName = By.id("LastName");
 	public static String lastNameValue = "Popara";
-
+	public static By email = By.id("Email");
+	public static String emailValue = "marapopara3@mail.com";
+	public static By password = By.id("Password");
+	public static String passwordValue= "kokoska";
+	public static By confirmPassword = By.id("ConfirmPassword");
+	public static By registerButton = By.id("register-button");
+	public static By registrationMessage = By.xpath("//div[@class=\"page-body\"]//div[@class=\"result\" and text()=\"Your registration completed\"]");
+	
+	
 }
