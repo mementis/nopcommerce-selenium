@@ -16,5 +16,5 @@ public class RegisterAccountObjects {
 	public static By registerButton = By.id("register-button");
 	public static By registrationMessage = By.xpath("//div[@class=\"page-body\"]//div[@class=\"result\" and text()=\"Your registration completed\"]");
 	
-
+	
 }
